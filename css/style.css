@@ -103,6 +103,7 @@ form div.campo input {
 
 form div.campo input:focus-within {
   background-color: white;
+  outline: none;
 }
 
 form div.campo label {
