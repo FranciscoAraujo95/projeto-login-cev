@@ -5,8 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tela de Login</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/media-query.css">
+    <link rel="stylesheet" href="css/media-query.css" />
   </head>
   <body>
     <main>
@@ -20,7 +24,40 @@
             Seja vem-vindo(a) novamente. Faça login para acessar sua conta e
             editar as preferências no seu ambiente.
           </p>
-          <form action="" method="post" autocomplete="on"></form>
+          <form action="" method="get" autocomplete="on">
+            <div class="campo">
+              <span class="material-symbols-outlined">person</span>
+              <input
+                type="email"
+                name="login"
+                id="log"
+                placeholder="Seu e-mail"
+                autocomplete="email"
+                required
+                maxlength="30"
+              />
+              <label for="log">Login</label>
+            </div>
+            <div class="campo">
+              <span class="material-symbols-outlined">lock</span>
+              <input
+                type="password"
+                name="senha"
+                id="senha"
+                placeholder="Sua senha"
+                autocomplete="current-password"
+                required
+                minlength="8"
+                maxlength="20"
+              />
+              <label for="senha">Senha</label>
+            </div>
+            <input type="submit" value="Entrar" />
+            <a href="esqueci.html"
+              >Esqueci a senha
+              <span class="material-symbols-outlined">mail</span>
+            </a>
+          </form>
         </div>
       </section>
     </main>
