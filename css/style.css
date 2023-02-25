@@ -34,15 +34,14 @@ section#login {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
   overflow: hidden;
-
   background-color: white;
   width: 260px;
   height: 500px;
   border-radius: 20px;
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.459);
 
+  transform: translate(-50%, -50%);
   transition: width 0.3s, height 0.3s;
   transition-timing-function: ease;
 }
@@ -95,11 +94,11 @@ form div.campo input {
   background-color: #83dfdc;
   font-size: 1em;
   width: calc(100% - 44.4px);
-  transform: translateY(-12.3px);
   height: 100%;
   border-radius: 8px;
   border: none;
   padding: 4px;
+  transform: translateY(-12.3px);
 }
 
 form div.campo input:focus-within {
